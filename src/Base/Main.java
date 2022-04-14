@@ -6,6 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 	Punkt pkt = new Punkt(10,5);
-    System.out.println(pkt.x+pkt.y);
+
     }
 }

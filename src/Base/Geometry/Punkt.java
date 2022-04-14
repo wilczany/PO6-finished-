@@ -29,7 +29,18 @@ public class Punkt {
         this(0,0);
     }
     public Punkt (Punkt p){
-
+        this(p.x,p.y);
+    }
+    public void przesun(int dx,int dy){
+        x+=dx;
+        y+=dy;
     }
 
+    @Override
+    public String toString() {
+        return "Punkt{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
