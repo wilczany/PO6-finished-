@@ -1,8 +1,11 @@
 package Base;
 
+import Base.Geometry.*;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	Punkt pkt = new Punkt(10,5);
+    System.out.println(pkt.x+pkt.y);
     }
 }
