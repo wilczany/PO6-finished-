@@ -35,6 +35,10 @@ public class Punkt {
         x+=dx;
         y+=dy;
     }
+    public boolean equals(Punkt comp){
+        if(this.x==comp.x&&this.y==comp.y)return true;
+        return false;
+    }
 
     @Override
     public String toString() {

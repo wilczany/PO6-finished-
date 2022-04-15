@@ -9,7 +9,7 @@ public class Main {
     Punkt pkt1 = new Punkt(4,2);
     Linia lin=new Linia(pkt,pkt1);
     System.out.println(lin);
-    pkt1.przesun(1,1);
+    lin.przesun(1,1);
     System.out.println(lin);
     }
 }

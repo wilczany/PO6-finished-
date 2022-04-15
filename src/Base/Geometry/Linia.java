@@ -2,7 +2,7 @@ package Base.Geometry;
 
 
 public class Linia {
-    private Punkt []punkty =new Punkt[2];
+    private final Punkt []punkty =new Punkt[2];
     public Linia(){
         punkty[0]=new Punkt();
         punkty[1]=new Punkt(1,1);
@@ -14,9 +14,12 @@ public class Linia {
     public Linia(Linia lin){
         this(lin.punkty[0],lin.punkty[1]);
     }
-    public void przestun(int dx,int dy){
+    public void przesun(int dx,int dy){
         punkty[0].przesun(dx,dy);
         punkty[1].przesun(dx,dy);
+    }
+    private boolean compatible(Linia comp){
+        return
     }
 
     @Override
