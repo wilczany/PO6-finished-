@@ -1,7 +1,7 @@
 package Base.Geometry;
 
 public class Czworokat {
-    Linia lines[]=new Linia[4];
+    private final Linia[] lines =new Linia[4];
     public Czworokat(){
         this(new Punkt(0,0),new Punkt(0,1),new Punkt(1,1),new Punkt(1,0));
     }
@@ -28,7 +28,7 @@ public class Czworokat {
         lines[3].przesun(dx,dy);
     }
     public String toString(){
-        return "  |"+lines[0]+","+lines[1]+","+lines[2]+","+lines[3]+"|  ";
+        return "  |"+lines[0]+" , "+lines[1]+" , "+lines[2]+" , "+lines[3]+"|  ";
 
     }
 }

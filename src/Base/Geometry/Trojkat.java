@@ -1,7 +1,7 @@
 package Base.Geometry;
 
 public class Trojkat {
-    private final Linia lines[]=new Linia[3];
+    private final Linia[] lines =new Linia[3];
     public Trojkat(){
         this(new Punkt(0,0),new Punkt(0,1),new Punkt(1,0));
     }

@@ -2,7 +2,7 @@ package Base.Geometry;
 
 
 public class Linia {
-    private final Punkt []punkty =new Punkt[2];
+    private final Punkt[] punkty =new Punkt[2];
     public Linia(){
         punkty[0]=new Punkt();
         punkty[1]=new Punkt(1,1);
