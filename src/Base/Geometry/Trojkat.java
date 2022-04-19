@@ -5,6 +5,7 @@ public class Trojkat {
     public Trojkat(){
         this(new Punkt(0,0),new Punkt(0,1),new Punkt(1,0));
     }
+    //ten konstruktor nie zapewnia spojnosci
     public Trojkat(Linia l1,Linia l2,Linia l3){
         lines[0]=new Linia(l1);
         lines[1]=new Linia(l2);
@@ -25,6 +26,6 @@ public class Trojkat {
     }
 
     public String toString(){
-    return "<"+lines[0]+" , "+lines[1]+" , "+lines[2]+">";
+    return "  <"+lines[0]+" , "+lines[1]+" , "+lines[2]+">  ";
     }
 }
