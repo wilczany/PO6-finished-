@@ -14,16 +14,14 @@ public class Linia {
     public Linia(Linia lin){
         this(lin.punkty[0],lin.punkty[1]);
     }
+
     public void przesun(int dx,int dy){
         punkty[0].przesun(dx,dy);
         punkty[1].przesun(dx,dy);
     }
-    private boolean compatible(Linia comp){
-        return
-    }
 
     @Override
     public String toString() {
-        return "{" +punkty[0].toString()+ "->" + punkty[1].toString() + '}';
+        return punkty[0]+ "--" + punkty[1];
     }
 }

@@ -35,9 +35,11 @@ public class Punkt {
         x+=dx;
         y+=dy;
     }
-    public boolean equals(Punkt comp){
-        if(this.x==comp.x&&this.y==comp.y)return true;
-        return false;
+
+    public boolean equals(Object o){
+        if(!(o instanceof Punkt))return false;
+        Punkt pkt=(Punkt) o;
+        return (x==pkt.x && y==pkt.y);
     }
 
     @Override
